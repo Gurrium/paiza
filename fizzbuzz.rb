@@ -1,17 +1,10 @@
+# 文字数を少なくする
 (1..100).each do |i|
-  puts "#{i} "
+  print "#{i} "
   if i % 3 == 0
-    if i % 5 == 0
-      puts 'fizzbuzz'
-      next
-    else
-      puts 'fizz'
-      next
-    end
-  end
-
-  if i % 5 == 0
-    puts 'buzz'
+    puts i % 5 == 0 ? 'fizzbuzz' : 'fizz'
     next
   end
+
+  puts i % 5 == 0 ? 'buzz' : nil
 end
