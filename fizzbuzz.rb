@@ -1,1 +1,1 @@
-(1..100).each { |i| print "#{i} ";puts i % 3 == 0 ? i % 5 == 0 ? 'fizzbuzz' : 'fizz' : i % 5 == 0 ? 'buzz' : '' }
+(1..100).each { |i| puts "#{i} #{'fizz' if i % 3 == 0}#{'buzz' if i % 5 == 0}" }
